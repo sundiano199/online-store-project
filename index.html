@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --color-aches: #E5E7EB;
+        --color-green: #008236;
+        --color-light-green: #019376;
+        --color-red: #F54A00;
+        --color-blue: #155DFC;
+        --color-faded-green: #DBFCE7;
+        --color-faded-red: #FFE2E2;
+        --color-purple: #4A5565;
+        --color-milk: #F9FAFB;
+        --color-light-blue: #DBEAFE;
+        --color-light-red: #FFE2E2;
+
+      }
+    </style>    
+</head>
+<body class="container mx-auto mb-8 min-h-screen" >
+    <header class="bg-white sticky top-0 z-20 pt-5 md:px-6 md:pb-3 md:drop-shadow-md  ">
+        <div class="flex justify-between items-center mb-5 px-4">
+        <div class="md:hidden"><img src="./assets/menu-icon.svg" alt="menu-icon"></div>
+        <div><button class="bg-aches rounded py-2 px-6">LOGO</button></div>
+        <div class="hidden md:flex">
+            <ul class="md:flex md:items-center gap-7 ">
+                <li><button class="font-semibold">Offer</button></li>
+                <li><button class="font-semibold">Need Help</button></li>
+                <li><button class="bg-light-green font-semibold py-1 px-4 rounded-lg text-white">Join</button></li>
+            </ul>
+        </div>
+        </div>
+         <section class="bg-milk py-4 drop-shadow-md md:hidden">
+            <div class="mx-5 py-3 rounded-lg bg-white flex items-center justify-center justify-between border border-gray-300 drop-shadow hover:bg-milk">
+            <div><img src="./assets/filter_alt_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg""></div>
+            <div class="ml-2 font-semibold"><h3>Filter Products</h3></div>
+            </div>
+            </section>
+    </header>
+    <main class="bg-milk">
+       
+    <section class="py-2 bg-milk">
+        <h1 class="text-4xl font-bold mx-6 text-center py-4">Special Offers & Deals</h1>
+        <h3 class="text-xl px-5 text-center leading-relaxed text-gray-500 md:mx-60">Discover amazing deals, flash sales, and exclusive offers on fresh groceries and household items</h3>
+    </section>
+    <section class="bg-milk">
+        <div class="md:flex md:justify-between md:mx-5">
+            <div class="text-center rounded-xl mx-5 py-10 my-5 bg-white border border-gray-300 drop-shadow md:px-27 md:py-7 md:mx-2"><h3 class="text-2xl text-light-green font-bold">4</h3><p>Active Offers</p></div>
+            <div class="text-center rounded-xl mx-5 py-10 my-5 bg-white border border-gray-300 drop-shadow md:px-27 md:py-7 md:mx-2"><h3 class="text-2xl text-light-green font-bold">50%</h3><p>Max Discount</p></div>
+            <div class="text-center rounded-xl mx-5 py-10 my-5 bg-white border border-gray-300 drop-shadow md:px-27 md:py-7 md:mx-2"><h3 class="text-2xl text-red font-bold">2</h3><p>Hot Deals</p></div>
+            <div class="text-center rounded-xl mx-5 py-10 my-5 bg-white border border-gray-300 drop-shadow md:px-27 md:py-7 md:mx-2"><h3 class="text-2xl text-blue font-bold">2</h3><p>New Offers</p></div>
+        </div>
+    </section>
+    <section class="bg-white mx-5 rounded-xl py-5 border border-gray-300 md:mx-7 md:flex md:justify-between md:items-center md:px-4">
+        <div class="flex justify-center items-center pb-4 md:pb-0"><input type="text"
+            placeholder="Search offers..."
+            class="rounded-lg border border-gray-300 pl-4 py-1 md:w-110 "></div>
+            <div class="md:flex md:justify-center md:items-center md:gap-3">
+                <div class="flex rounded-lg border border-gray-400 pl-4 py-1 mx-30 ml-19 mb-4 gap-2 md:mx-2 md:mb-0 md:gap-4">
+                    <div><p class="pr-9">All Offers</p></div>
+                    <div><img src="./assets/arrow-down.svg" alt=""></div>
+                </div>
+                <div class="flex rounded-lg border border-gray-400 pl-4 py-1 mx-30 ml-19 mb-4 gap-2 md:mx-2 md:mb-0 md:gap-4">
+                    <div><p class="pr-4">Newest First</p></div>
+                    <div><img src="./assets/arrow-down.svg" alt=""></div>
+                </div>
+                <div class="flex  justify-center items-center ">
+                <button class="flex gap-1 md:gap-1 rounded-lg border border-gray-400 px-2 md:px-5 py-1 font-semibold ">
+                   <img src="./assets/filter_alt_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    More Filters
+                </button>
+                </div>
+            </div>
+    </section>
+    <section class="md:flex md:flex-wrap md:px-3 md:ml-3">
+        <div class="bg-white mx-5 md:mx-3 rounded-xl py-5 md:px-10  mt-5 px-5 hover:drop-shadow-lg border border-gray-300">
+            <div class="flex justify-between pb-5 md:mx-[-15px]">
+               
+            <div class="flex gap-3  ">
+                <h4 class="bg-light-blue rounded-lg px-4 font-medium">New</h4>
+                <h4 class="bg-light-red rounded-lg px-4 font-medium">Hot</h4>
+            </div>
+            <div class="flex gap-4">
+                <img src="./assets/heart.svg" alt="">
+                <img src="./assets/share.svg" alt="">
+            </div>
+            </div>
+        <div class="text-4xl text-center pb-2">🎯</div>
+        <div><h2 class="text-center text-lg font-semibold pb-4">Cherry Blast</h2></div>
+        <div><p class="text-center text-sm text-gray-500 pb-3">Fresh cherries at 25% off</p></div>
+        <div class="flex gap-1 justify-center pb-3">
+            <div><h4 class="rounded-lg border border-gray-200 px-1 font-semibold text-xs">Cherries</h4></div>
+            <div><h4 class="rounded-lg border border-gray-200 px-1 font-semibold text-xs">Flashsales</h4></div>
+            <div><h4 class="rounded-lg border border-gray-200 px-1 font-semibold text-xs">Limited Time</h4></div>
+        </div>
+        <div class="pb-4"><p class="text-center bg-faded-green rounded-lg mx-28 font-medium text-green ">25% OFF</p></div>
+        <div class="pb-4"><h4 class="text-center rounded-lg border border-gray-200 font-semibold text-xs mx-23">Fruits & Vegetables</h4></div>
+        <div class="flex gap-2 justify-center items-center bg-light-red rounded-lg mx-28 mb-4">
+            <div><img src="./assets/clock-icon.svg" alt=""></div>
+            <div><h4 class="text-xs text-red font-semibold">Expired</h4></div>
+        </div>
+        <div class="flex justify-between md:mx-[-15px]">
+            <div class="flex bg-light-green gap-2 rounded-lg px-5 py-2">
+                <div><img src="./assets/shopping-cart.svg" alt=""></div>
+                <div><p class="text-white font-semibold text-sm ">Shop Now</p></div>
+            </div>
+             <div class="flex border border-gray-200 rounded-lg gap-2 px-5 py-2">
+                <div><img src="./assets/attachment.svg" alt=""></div>
+                <div><p class="font-semibold text-sm">View Products</p></div>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="bg-white mx-5 md:mx-3 rounded-xl py-5 mt-5 px-5 md:px-10 hover:drop-shadow-lg border border-gray-300">
+           
+            
+            <div class="flex gap-4 justify-end items-end md:mx-[-15px]">
+                <img src="./assets/heart.svg" alt="">
+                <img src="./assets/share.svg" alt="">
+            </div>
+            
+        <div class="text-4xl text-center pb-2">🎯</div>
+        <div><h2 class="text-center text-lg font-semibold pb-4">Sweet Corn Special</h2></div>
+        <div><p class="text-center text-sm text-gray-500 pb-3">Get ₦50 off on sweet corn</p></div>
+        <div class="flex gap-1 justify-center pb-3">
+            <div><h4 class="rounded-lg border border-gray-200 px-1 font-semibold text-xs">Corn</h4></div>
+            <div><h4 class="rounded-lg border border-gray-200 px-1 font-semibold text-xs">Fixed Discount</h4></div>
+            <div><h4 class="rounded-lg border border-gray-200 px-1 font-semibold text-xs">Special</h4></div>
+        </div>
+        <div class="pb-4"><p class="text-center bg-faded-green rounded-lg mx-28 font-medium text-green ">₦50 OFF</p></div>
+        <div class="pb-4"><h4 class="text-center rounded-lg border border-gray-200 font-semibold text-xs mx-23">Fruits & Vegetables</h4></div>
+        <div class="flex gap-2 justify-center items-center bg-light-red rounded-lg mx-28 mb-4">
+            <div><img src="./assets/clock-icon.svg" alt=""></div>
+            <div><h4 class="text-xs text-red font-semibold">Expired</h4></div>
+        </div>
+        <div class="flex justify-between md:mx-[-15px]">
+            <div class="flex bg-light-green gap-2 rounded-lg px-5 py-2">
+                <div><img src="./assets/shopping-cart.svg" alt=""></div>
+                <div><p class="text-white font-semibold text-sm ">Shop Now</p></div>
+            </div>
+             <div class="flex border border-gray-200 rounded-lg gap-2 px-5 py-2">
+                <div><img src="./assets/attachment.svg" alt=""></div>
+                <div><p class="font-semibold text-sm">View Products</p></div>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="bg-white mx-5 md:mx-3 rounded-xl py-5 mt-5 px-5 md:px-10 hover:drop-shadow-lg border border-gray-300">
+            <div class="flex justify-between pb-5 md:mx-[-15px]">
+            <div class="flex gap-3 ">
+            
+                <h4 class="bg-light-red rounded-lg px-4 font-medium">Hot</h4>
+            </div>
+            <div class="flex gap-4">
+                <img src="./assets/heart.svg" alt="">
+                <img src="./assets/share.svg" alt="">
+            </div>
+            </div>
+        <div class="text-4xl text-center pb-2">🎯</div>
+        <div><h2 class="text-center text-lg font-semibold pb-4">Fresh Lime Sale</h2></div>
+        <div><p class="text-center text-sm text-gray-500 pb-3">Get 20% off on all lime products</p></div>
+        <div class="flex gap-1 justify-center pb-3">
+            <div><h4 class="rounded-lg border border-gray-200 px-1 font-semibold text-xs">Sale</h4></div>
+            <div><h4 class="rounded-lg border border-gray-200 px-1 font-semibold text-xs">lime</h4></div>
+            <div><h4 class="rounded-lg border border-gray-200 px-1 font-semibold text-xs">Fresh</h4></div>
+        </div>
+        <div class="pb-4"><p class="text-center bg-faded-green rounded-lg mx-28 font-medium text-green ">20% OFF</p></div>
+        <div class="pb-4"><h4 class="text-center rounded-lg border border-gray-200 font-semibold text-xs mx-23">Fruits & Vegetables</h4></div>
+        <div class="flex gap-2 justify-center items-center bg-light-red rounded-lg mx-28 mb-4">
+            <div><img src="./assets/clock-icon.svg" alt=""></div>
+            <div><h4 class="text-xs text-red font-semibold">Expired</h4></div>
+        </div>
+        <div class="flex justify-between md:mx-[-15px]">
+            <div class="flex bg-light-green gap-2 rounded-lg px-5 py-2">
+                <div><img src="./assets/shopping-cart.svg" alt=""></div>
+                <div><p class="text-white font-semibold text-sm ">Shop Now</p></div>
+            </div>
+             <div class="flex border border-gray-200 rounded-lg gap-2 px-5 py-2">
+                <div><img src="./assets/attachment.svg" alt=""></div>
+                <div><p class="font-semibold text-sm">View Products</p></div>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="bg-white mx-5 md:mx-3 rounded-xl py-5 mt-5 mb-12 px-5 md:px-10 hover:drop-shadow-lg border border-gray-300">
+            <div class="flex justify-between pb-5 md:mx-[-15px]">
+            <div class="flex gap-3 ">
+                <h4 class="bg-light-blue rounded-lg px-4 font-medium">New</h4>
+             
+            </div>
+            <div class="flex gap-4">
+                <img src="./assets/heart.svg" alt="">
+                <img src="./assets/share.svg" alt="">
+            </div>
+            </div>
+        <div class="text-4xl text-center pb-2">🎯</div>
+        <div><h2 class="text-center text-lg font-semibold pb-4">Organic Bundle</h2></div>
+        <div><p class="text-center text-sm text-gray-500 pb-3">Buy 2 organic products, get 15% off</p></div>
+        <div class="flex gap-1 justify-center pb-3">
+            <div><h4 class="rounded-lg border border-gray-200 px-1 font-semibold text-xs">Organic</h4></div>
+            <div><h4 class="rounded-lg border border-gray-200 px-1 font-semibold text-xs">Bundle</h4></div>
+            <div><h4 class="rounded-lg border border-gray-200 px-1 font-semibold text-xs">Discount</h4></div>
+        </div>
+        <div class="pb-4"><p class="text-center bg-faded-green rounded-lg mx-28 font-medium text-green">15% OFF</p></div>
+        <div class="pb-4"><h4 class="text-center rounded-lg border border-gray-200 font-semibold text-xs mx-23">Fruits & Vegetables</h4></div>
+        <div class="flex gap-2 justify-center items-center bg-light-red rounded-lg mx-28 mb-4">
+            <div><img src="./assets/clock-icon.svg" alt=""></div>
+            <div><h4 class="text-xs text-red font-semibold">Expired</h4></div>
+        </div>
+        <div class="flex justify-between md:mx-[-15px]">
+            <div class="flex bg-light-green gap-2 rounded-lg px-5 py-2">
+                <div><img src="./assets/shopping-cart.svg" alt=""></div>
+                <div><p class="text-white font-semibold text-sm ">Shop Now</p></div>
+            </div>
+             <div class="flex border border-gray-200 rounded-lg gap-2 px-5 py-2">
+                <div><img src="./assets/attachment.svg" alt=""></div>
+                <div><p class="font-semibold text-sm">View Products</p></div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <section class="bg-light-green text-center rounded-lg mx-5 py-14 md:mx-8">
+        <h2 class="text-white text-2xl font-bold pb-4">Never Miss a Deal!</h2>
+        <p class="text-milk px-6 pb-4">Subscribe to our newsletter and be the first to know about exclusive offers and flash sales</p>
+        <div class="md:flex md:items-center md:justify-center md:mr-20 ">
+            <div class="mx-6 rounded-lg bg-white text-left  py-1 appearance-none placeholder:text-left placeholder:pr-3 md:pr-35 md:ml-25 md:py-2"><input type="email" name="email" 
+                placeholder="Enter your email"
+                class="px-2"></div>
+            <div class="pt-3 pb-2 md:pt-0 md:pb-0"><button class="bg-white text-light-green rounded-lg py-2 px-29 md:w-29 md:px-18 md:p hover:bg-milk md:flex md:items-center md:justify-center md:text-center md:font-semibold">Subscribe</button></div>
+        </div>
+    </section>
+    </main>
+</body>
+</html>
